@@ -41,7 +41,7 @@ export default class Ball {
     this.velocity = INITIAL_VELOCITY;
   }
 
-  update(delta) {
+  update(delta, paddleRects) {
     this.x += this.direction.x * this.velocity * delta;
     this.y += this.direction.y * this.velocity * delta;
     this.velocity += VELOCITY_INCREASE * delta
